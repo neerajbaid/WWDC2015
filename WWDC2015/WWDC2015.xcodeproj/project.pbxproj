@@ -12,6 +12,7 @@
 		0706E5F01ADDCE7700E66770 /* UIView+MaterialDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 0706E5EF1ADDCE7700E66770 /* UIView+MaterialDesign.m */; };
 		0706E5F31ADDD04000E66770 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0706E5F21ADDD04000E66770 /* MapKit.framework */; };
 		0706E5F71ADDD5CF00E66770 /* NBMapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0706E5F51ADDD5CF00E66770 /* NBMapViewAnnotation.m */; };
+		0706E5FA1ADDD81D00E66770 /* UIColor+WWDC2015.m in Sources */ = {isa = PBXBuildFile; fileRef = 0706E5F91ADDD81D00E66770 /* UIColor+WWDC2015.m */; };
 		073283BF1ADD7B3000EE8AEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283BE1ADD7B3000EE8AEF /* main.m */; };
 		073283C21ADD7B3000EE8AEF /* NBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283C11ADD7B3000EE8AEF /* NBAppDelegate.m */; };
 		073283C51ADD7B3000EE8AEF /* NBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283C41ADD7B3000EE8AEF /* NBViewController.m */; };
@@ -43,6 +44,8 @@
 		0706E5F21ADDD04000E66770 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0706E5F51ADDD5CF00E66770 /* NBMapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMapViewAnnotation.m; sourceTree = "<group>"; };
 		0706E5F61ADDD5CF00E66770 /* NBMapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMapViewAnnotation.h; sourceTree = "<group>"; };
+		0706E5F81ADDD81D00E66770 /* UIColor+WWDC2015.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WWDC2015.h"; sourceTree = "<group>"; };
+		0706E5F91ADDD81D00E66770 /* UIColor+WWDC2015.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WWDC2015.m"; sourceTree = "<group>"; };
 		073283B91ADD7B3000EE8AEF /* WWDC2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		073283BD1ADD7B3000EE8AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		073283BE1ADD7B3000EE8AEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 			children = (
 				0706E5EE1ADDCE7700E66770 /* UIView+MaterialDesign.h */,
 				0706E5EF1ADDCE7700E66770 /* UIView+MaterialDesign.m */,
+				0706E5F81ADDD81D00E66770 /* UIColor+WWDC2015.h */,
+				0706E5F91ADDD81D00E66770 /* UIColor+WWDC2015.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				073283C21ADD7B3000EE8AEF /* NBAppDelegate.m in Sources */,
 				0706E5F01ADDCE7700E66770 /* UIView+MaterialDesign.m in Sources */,
 				073283BF1ADD7B3000EE8AEF /* main.m in Sources */,
+				0706E5FA1ADDD81D00E66770 /* UIColor+WWDC2015.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

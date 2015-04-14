@@ -3,6 +3,7 @@
 #import "NBItemObject.h"
 #import "NBItemView.h"
 #import "NBMapViewAnnotation.h"
+#import "UIColor+WWDC2015.h"
 
 @interface NBItemView ()
 
@@ -18,10 +19,13 @@
     self = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class])
                                           owner:self options:nil] firstObject];
     if (self) {
+        UIColor *textColor = [UIColor blackOrWhiteFromColor:item.color];
         self.frame = frame;
         self.backgroundColor = item.color;
         self.titleLabel.text = item.name;
+        self.titleLabel.textColor = textColor;
         self.descriptionLabel.text = item.itemDescription;
+        self.descriptionLabel.textColor = textColor;
         MKCoordinateSpan span;
         span.latitudeDelta = 0.05;
         MKCoordinateRegion region = MKCoordinateRegionMake(item.coordinate, span);

@@ -2,11 +2,13 @@
 
 #import "NBBallView.h"
 #import "NBItemObject.h"
+#import "NBItemView.h"
 #import "NBViewController.h"
+#import "UIView+MaterialDesign.h"
 
 #define NBBallViewSpacing 16
 
-@interface NBViewController ()
+@interface NBViewController () <NBBallViewDelegate>
 
 @property (nonatomic, strong) UIDynamicAnimator *animator;
 @property (nonatomic, strong) UIGravityBehavior *gravity;
@@ -47,6 +49,7 @@
         frame.origin.x += shift;
         NBItemObject *item = [[NBItemObject alloc] initWithJSON:datum];
         NBBallView *ballView = [[NBBallView alloc] initWithFrame:frame item:item];
+        ballView.delegate = self;
         [self.view addSubview:ballView];
         self.views = [self.views arrayByAddingObject:ballView];
     }
@@ -70,6 +73,30 @@
     UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:self.views];
     collision.translatesReferenceBoundsIntoBoundary = YES;
     [self.animator addBehavior:collision];
+}
+
+#pragma mark - NBBallViewDelegate
+
+- (void)ballView:(NBBallView *)ballView wasSelectedWithItemObject:(NBItemObject *)itemObject {
+    NBItemView *itemView = [[NBItemView alloc] initWithFrame:self.view.frame itemObject:itemObject];
+    NSArray *behaviors = self.animator.behaviors;
+    itemView.closeBlock = ^{
+        [UIView mdDeflateTransitionFromView:itemView
+                                     toView:self.view
+                              originalPoint:ballView.center
+                                   duration:0.4
+                                 completion:^{
+                                     for (UIDynamicBehavior *behavior in behaviors) {
+                                         [self.animator addBehavior:behavior];
+                                     }
+                                 }];
+    };
+    [self.animator removeAllBehaviors];
+    [UIView mdInflateTransitionFromView:self.view
+                                 toView:itemView
+                          originalPoint:ballView.center
+                               duration:0.4
+                             completion:nil];
 }
 
 @end

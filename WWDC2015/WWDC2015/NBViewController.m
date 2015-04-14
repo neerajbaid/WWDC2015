@@ -1,3 +1,5 @@
+#import <CoreMotion/CoreMotion.h>
+
 #import "NBBallView.h"
 #import "NBItemObject.h"
 #import "NBViewController.h"
@@ -7,6 +9,8 @@
 @interface NBViewController ()
 
 @property (nonatomic, strong) UIDynamicAnimator *animator;
+@property (nonatomic, strong) UIGravityBehavior *gravity;
+@property (nonatomic, strong) CMMotionManager *motionManager;
 @property (nonatomic, strong) NSArray *views;
 
 @end
@@ -49,12 +53,20 @@
 }
 
 - (void)setupAnimators {
+    self.motionManager = [[CMMotionManager alloc] init];
+    if (self.motionManager.accelerometerAvailable) {
+        self.motionManager = [[CMMotionManager alloc] init];
+        [self.motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue]
+                                                withHandler:^(CMDeviceMotion *motion, NSError *error) {
+                                                    self.gravity.gravityDirection = CGVectorMake(motion.gravity.x, -motion.gravity.y);
+                                                }];
+    }
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     UIDynamicItemBehavior *elasticityBehavior = [[UIDynamicItemBehavior alloc] initWithItems:self.views];
     elasticityBehavior.elasticity = 0.6f;
     [self.animator addBehavior:elasticityBehavior];
-    UIGravityBehavior *gravity = [[UIGravityBehavior alloc] initWithItems:self.views];
-    [self.animator addBehavior:gravity];
+    self.gravity = [[UIGravityBehavior alloc] initWithItems:self.views];
+    [self.animator addBehavior:self.gravity];
     UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:self.views];
     collision.translatesReferenceBoundsIntoBoundary = YES;
     [self.animator addBehavior:collision];

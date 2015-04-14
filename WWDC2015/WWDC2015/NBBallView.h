@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-#define NBBallViewWidth 100
+#define NBBallViewWidth 80
 
 @class NBItemObject;
 @interface NBBallView : UIView

@@ -19,6 +19,7 @@
         self.bodyLinks = json[@"body_links"];
         self.textForBodyLinks = json[@"text_for_body_links"];
         self.mapTitle = json[@"map_title"];
+        self.imageName = json[@"image"];
     }
     return self;
 }

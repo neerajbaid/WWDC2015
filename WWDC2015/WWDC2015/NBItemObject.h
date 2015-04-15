@@ -16,5 +16,6 @@
 @property (nonatomic, strong) NSArray *bodyLinks;
 @property (nonatomic, strong) NSArray *textForBodyLinks;
 @property (nonatomic, strong) NSString *mapTitle;
+@property (nonatomic, strong) NSString *imageName;
 
 @end

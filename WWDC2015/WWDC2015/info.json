@@ -10,7 +10,8 @@
    "title_links": [],
    "text_for_title_links": [],
    "body_links": ["http://tedx.harker.org"],
-   "text_for_body_links": ["TEDxHarkerSchool"]
+   "text_for_body_links": ["TEDxHarkerSchool"],
+   "image":"harker"
  }, {
    "latitude": 37.776473,
    "longitude": -122.392091,

@@ -15,7 +15,15 @@
         self.item = item;
         self.layer.cornerRadius = NBBallViewWidth/2;
         self.backgroundColor = self.item.color;
+        self.layer.masksToBounds = YES;
         [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)]];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0,
+                                                                               self.frame.size.width,
+                                                                               self.frame.size.height)];
+        [self addSubview:imageView];
+        if (self.item.imageName) {
+            imageView.image = [UIImage imageNamed:self.item.imageName];
+        }
     }
     return self;
 }

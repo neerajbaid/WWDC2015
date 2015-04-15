@@ -77,20 +77,22 @@
    "description": "• Crowdsourced cloud-based contact sharing iOS app.\n• Awarded Top 10 at MHacks, the largest hackathon ever at the time.",
    "category": "PROJECT",
    "name": "Rolodex",
-   "red": "220",
-   "green": "220",
-   "blue": "220",
-   "map_title": "MHacks"
+   "red": "255",
+   "green": "202",
+   "blue": "9",
+   "map_title": "MHacks",
+  "image":"mhacks"
  }, {
    "latitude": 39.949271,
    "longitude": -75.190980,
    "description": "• At PennApps, we built an Objective-C interpreter in Objective-C.\n• With the interpreter, we were able to run native Objective-C code and emulate the iOS app lifecycle on an iPad.",
    "category": "PROJECT",
    "name": "iXcode",
-   "red": "76",
-   "green": "153",
-   "blue": "251",
-   "map_title": "PennApps"
+   "red": "5",
+   "green": "40",
+   "blue": "70",
+   "map_title": "PennApps",
+  "image":"pennapps"
  }, {
    "latitude": 37.869575,
    "longitude": -122.258872,
@@ -148,9 +150,9 @@
    "description": "• Food-centric social network.\n• Enables restaurant discovery through images and proximity rather than simply text.\n• Came up with the idea while sharing a stunning cup of Sightglass Coffee.",
    "category": "PROJECT",
    "name": "Dish",
-   "red": "185",
-   "green": "220",
-   "blue": "164",
+   "red": "77",
+   "green": "52",
+   "blue": "9",
    "map_title": "Sightglass Coffee"
  }, {
    "latitude": 34.013612,
@@ -171,10 +173,11 @@
    "description": "• Built an app at HackMIT that provided recommendations on interesting things to do around you.\n• Based recommendations off what your friends had done nearby.",
    "category": "PROJECT",
    "name": "Here",
-   "red": "220",
-   "green": "220",
-   "blue": "220",
-   "map_title": "HackMIT"
+   "red": "86",
+   "green": "207",
+   "blue": "134",
+   "map_title": "HackMIT",
+  "image":"hackmit"
  }, {
    "latitude": 28.632215,
    "longitude": 77.241326,

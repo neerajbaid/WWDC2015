@@ -101,11 +101,16 @@
                                  }];
     };
     [self.animator removeAllBehaviors];
+    self.view.userInteractionEnabled = NO;
+    itemView.userInteractionEnabled = NO;
     [UIView mdInflateTransitionFromView:self.view
                                  toView:itemView
                           originalPoint:ballView.center
                                duration:0.4
-                             completion:nil];
+                             completion:^{
+                                 self.view.userInteractionEnabled = YES;
+                                 itemView.userInteractionEnabled = YES;
+                             }];
 }
 
 @end

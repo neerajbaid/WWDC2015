@@ -18,7 +18,6 @@
 		073283C51ADD7B3000EE8AEF /* NBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283C41ADD7B3000EE8AEF /* NBViewController.m */; };
 		073283C81ADD7B3000EE8AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073283C61ADD7B3000EE8AEF /* Main.storyboard */; };
 		073283CA1ADD7B3000EE8AEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073283C91ADD7B3000EE8AEF /* Images.xcassets */; };
-		073283CD1ADD7B3000EE8AEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 073283CB1ADD7B3000EE8AEF /* LaunchScreen.xib */; };
 		073283D91ADD7B3100EE8AEF /* WWDC2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283D81ADD7B3100EE8AEF /* WWDC2015Tests.m */; };
 		073283E41ADD7C0000EE8AEF /* NBBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283E31ADD7C0000EE8AEF /* NBBallView.m */; };
 		073283E71ADD810F00EE8AEF /* NBItemObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283E61ADD810F00EE8AEF /* NBItemObject.m */; };
@@ -55,7 +54,6 @@
 		073283C41ADD7B3000EE8AEF /* NBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBViewController.m; sourceTree = "<group>"; };
 		073283C71ADD7B3000EE8AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		073283C91ADD7B3000EE8AEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		073283CC1ADD7B3000EE8AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		073283D21ADD7B3100EE8AEF /* WWDC2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDC2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		073283D71ADD7B3100EE8AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		073283D81ADD7B3100EE8AEF /* WWDC2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDC2015Tests.m; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				073283E31ADD7C0000EE8AEF /* NBBallView.m */,
 				073283C61ADD7B3000EE8AEF /* Main.storyboard */,
 				073283C91ADD7B3000EE8AEF /* Images.xcassets */,
-				073283CB1ADD7B3000EE8AEF /* LaunchScreen.xib */,
 				0706E5F11ADDCE7B00E66770 /* Categories */,
 				0706E5F41ADDD05D00E66770 /* Frameworks */,
 				073283BC1ADD7B3000EE8AEF /* Supporting Files */,
@@ -257,7 +254,6 @@
 			files = (
 				073283C81ADD7B3000EE8AEF /* Main.storyboard in Resources */,
 				073283E91ADD815400EE8AEF /* info.json in Resources */,
-				073283CD1ADD7B3000EE8AEF /* LaunchScreen.xib in Resources */,
 				0706E5ED1ADDCBBE00E66770 /* NBItemView.xib in Resources */,
 				073283CA1ADD7B3000EE8AEF /* Images.xcassets in Resources */,
 			);
@@ -314,14 +310,6 @@
 				073283C71ADD7B3000EE8AEF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		073283CB1ADD7B3000EE8AEF /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				073283CC1ADD7B3000EE8AEF /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -26,10 +26,10 @@
     return _views;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self setupViews];
-    [self setupAnimators];
+- (void)viewDidAppear:(BOOL)animated {
+    if (self.views.count == 0) {
+        [self setupViews];
+    }
 }
 
 - (void)setupViews {
@@ -38,7 +38,7 @@
     NSArray *rawData = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath]
                                                        options:NSJSONReadingAllowFragments
                                                          error:nil];
-    NSInteger numCols = (self.view.bounds.size.width + NBBallViewSpacing) / (NBBallViewWidth + NBBallViewSpacing);
+    NSInteger numCols = (self.view.bounds.size.width + NBBallViewSpacing) / (NBBallViewWidth + NBBallViewSpacing) - 1;
     for (NSInteger i = 0; i < rawData.count; i++) {
         NSDictionary *datum = rawData[i];
         NSInteger x = i % numCols;
@@ -51,9 +51,17 @@
         NBItemObject *item = [[NBItemObject alloc] initWithJSON:datum];
         NBBallView *ballView = [[NBBallView alloc] initWithFrame:frame item:item];
         ballView.delegate = self;
+        ballView.alpha = 0;
         [self.view addSubview:ballView];
         self.views = [self.views arrayByAddingObject:ballView];
     }
+    [UIView animateWithDuration:0.2 animations:^{
+        for (NBBallView *ballView in self.views) {
+            ballView.alpha = 1;
+        }
+    } completion:^(BOOL finished) {
+        [self setupAnimators];
+    }];
 }
 
 - (void)setupAnimators {

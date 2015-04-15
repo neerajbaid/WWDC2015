@@ -15,7 +15,7 @@
  }, {
    "latitude": 37.776473,
    "longitude": -122.392091,
-   "description": "• I will be on Venmo's SF iOS Team during Summer 2014.\n• I'll either work on the iOS app or the Venmo Touch SDK.",
+   "description": "• I was on Venmo's SF iOS Team during Summer 2014.\n• I reworked the payment compose screen and rebuilt the passcode lock system.\n• I also built a one-touch picture payments app called Dot.",
    "category": "WORK",
    "name": "Venmo",
    "red": "72",
@@ -26,7 +26,7 @@
  }, {
    "latitude": 37.288460,
    "longitude": -121.768007,
-   "description": "• Save gift cards on your iPhone.\n• Cards are accepted universally due to a standardized barcode display.\n• This was my first experience building the server-side architecture in addition to the front end for an iOS app.",
+   "description": "• Buy and send gift cards on your iPhone from over 100 retailers like Barnes & Noble and GameStop.\n• giftbook is in the App Store Apple Pay collection!",
    "category": "PROJECT",
    "name": "giftbook",
    "red": "255",
@@ -129,12 +129,13 @@
    "description": "• Built a voice-activated camera at TechCrunch Disrupt SF 2013.\n• Recognized by RadiumOne for API usage.",
    "category": "PROJECT",
    "name": "SpeakToSnap",
-   "red": "205",
-   "green": "81",
-   "blue": "81",
+   "red": "9",
+   "green": "158",
+   "blue": "3",
    "title_links": ["https://itunes.apple.com/us/app/speaktosnap/id704057948?mt=8"],
    "text_for_title_links": ["SpeakToSnap"],
-   "map_title": "TC Disrupt"
+   "map_title": "TC Disrupt",
+  "image":"techcrunch"
  }, {
    "latitude": 37.967994,
    "longitude": -122.537750,

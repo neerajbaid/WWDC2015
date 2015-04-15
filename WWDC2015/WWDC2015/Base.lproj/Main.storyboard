@@ -26,7 +26,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="avatar" width="5441" height="8293"/>
+        <image name="avatar" width="1312" height="2000"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

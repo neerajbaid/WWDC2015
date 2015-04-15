@@ -50,7 +50,7 @@
  }, {
    "latitude": 37.476908,
    "longitude": -122.151705,
-   "description": "• I completed unit testing of Poshmark's iPhone and iPad apps.",
+   "description": "• I A/B tested the first version of Poshmark's iPad app.",
    "category": "WORK",
    "name": "Poshmark",
    "red": "162",
@@ -81,7 +81,7 @@
    "green": "202",
    "blue": "9",
    "map_title": "MHacks",
-  "image":"mhacks"
+   "image": "mhacks"
  }, {
    "latitude": 39.949271,
    "longitude": -75.190980,
@@ -92,11 +92,11 @@
    "green": "40",
    "blue": "70",
    "map_title": "PennApps",
-  "image":"pennapps"
+   "image": "pennapps"
  }, {
    "latitude": 37.869575,
    "longitude": -122.258872,
-   "description": "• I am a freshman at UC Berkeley, majoring in EECS.",
+   "description": "• I am in my second year at UC Berkeley, majoring in EECS.",
    "category": "EDUCATION",
    "name": "UC Berkeley",
    "red": "253",
@@ -116,7 +116,7 @@
  }, {
    "latitude": 46.806816,
    "longitude": 7.149632,
-   "description": "• Sophomore year of high school I took part in an exchange trip to Switzerland.\n• Seeing the stark differences between Swiss and American culture opened my eyes to new ways of life.",
+   "description": "• In my sophomore year of high school I took part in an exchange trip to Switzerland.\n• Seeing the stark differences between Swiss and American culture opened my eyes to new ways of life.",
    "category": "INTEREST",
    "name": "Fribourg, Switzerland",
    "red": "211",
@@ -126,7 +126,7 @@
  }, {
    "latitude": 37.771203,
    "longitude": -122.404939,
-   "description": "• Built a voice-activated camera at TechCrunch Disrupt SF 2013.\n• Recognized by RadiumOne for API usage.",
+   "description": "• I built a voice-activated camera at TechCrunch Disrupt SF 2013.\n• Recognized by RadiumOne for API usage.",
    "category": "PROJECT",
    "name": "SpeakToSnap",
    "red": "9",
@@ -135,7 +135,7 @@
    "title_links": ["https://itunes.apple.com/us/app/speaktosnap/id704057948?mt=8"],
    "text_for_title_links": ["SpeakToSnap"],
    "map_title": "TC Disrupt",
-  "image":"techcrunch"
+   "image": "techcrunch"
  }, {
    "latitude": 37.967994,
    "longitude": -122.537750,
@@ -178,7 +178,7 @@
    "green": "207",
    "blue": "134",
    "map_title": "HackMIT",
-  "image":"hackmit"
+   "image": "hackmit"
  }, {
    "latitude": 28.632215,
    "longitude": 77.241326,
@@ -191,4 +191,17 @@
    "green": "153",
    "blue": "52",
    "image": "india"
+ }, {
+   "latitude": 37.4222313,
+   "longitude": -122.1371107,
+   "description": "• $0 commission stock trading on your iPhone.\n• This summer, I'll be on Robinhood's iOS team.\n• With my deep interest in mobile finance, I'm very excited for this summer.",
+   "category": "WORK",
+   "name": "Robinhood",
+   "title_links": ["http://robinhood.com"],
+   "text_for_title_links": ["Robinhood"],
+   "red": "32",
+   "green": "206",
+   "blue": "152",
+   "image": "robinhood",
+   "map_title": "Robinhood Office"
  }]

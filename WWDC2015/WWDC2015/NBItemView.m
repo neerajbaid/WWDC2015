@@ -1,3 +1,4 @@
+#import <CoreText/CoreText.h>
 #import <MapKit/MapKit.h>
 
 #import "NBItemObject.h"
@@ -10,6 +11,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (weak, nonatomic) IBOutlet UIButton *closeButton;
 
 @end
 
@@ -19,13 +21,27 @@
     self = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class])
                                           owner:self options:nil] firstObject];
     if (self) {
-        UIColor *textColor = [UIColor blackOrWhiteFromColor:item.color];
         self.frame = frame;
         self.backgroundColor = item.color;
+        UIColor *textColor = [UIColor blackOrWhiteFromColor:item.color];
         self.titleLabel.text = item.name;
-        self.titleLabel.textColor = textColor;
         self.descriptionLabel.text = item.itemDescription;
-        self.descriptionLabel.textColor = textColor;
+        [self.titleLabel setTextColor:textColor];
+        [self.descriptionLabel setTextColor:textColor];
+        CGRect expectedLabelSize = [item.itemDescription boundingRectWithSize:CGSizeMake(self.descriptionLabel.frame.size.width, 10000.0)
+                                                                      options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
+                                                                   attributes:@{NSFontAttributeName:self.descriptionLabel.font}
+                                                                      context:nil];
+        CGRect newFrame = self.descriptionLabel.frame;
+        newFrame.size.height = expectedLabelSize.size.height;
+        newFrame.origin.y = self.titleLabel.frame.origin.y + self.titleLabel.frame.size.height + 8;
+        self.descriptionLabel.frame = newFrame;
+        CGRect newMapFrame = self.mapView.frame;
+        newMapFrame.origin.y = newFrame.origin.y + newFrame.size.height + 8;
+        self.mapView.frame = newMapFrame;
+        CGRect newCloseFrame = self.closeButton.frame;
+        newCloseFrame.origin.y = newMapFrame.origin.y + newMapFrame.size.height + 8;
+        self.closeButton.frame = newCloseFrame;
         MKCoordinateSpan span;
         span.latitudeDelta = 0.05;
         MKCoordinateRegion region = MKCoordinateRegionMake(item.coordinate, span);
@@ -35,9 +51,12 @@
         [self.mapView addAnnotation:annotation];
         [self.mapView selectAnnotation:annotation animated:YES];
         self.mapView.layer.cornerRadius = 5;
+        [self.closeButton setTitleColor:textColor forState:UIControlStateNormal];
     }
     return self;
 }
+
+#pragma mark - Actions
 
 - (IBAction)close:(id)sender {
     if (self.closeBlock) {
@@ -47,3 +66,4 @@
 }
 
 @end
+

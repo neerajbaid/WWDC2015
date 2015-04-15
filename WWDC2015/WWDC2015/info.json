@@ -11,7 +11,7 @@
    "text_for_title_links": [],
    "body_links": ["http://tedx.harker.org"],
    "text_for_body_links": ["TEDxHarkerSchool"],
-   "image":"harker"
+   "image": "harker"
  }, {
    "latitude": 37.776473,
    "longitude": -122.392091,
@@ -21,7 +21,8 @@
    "red": "72",
    "green": "152",
    "blue": "207",
-   "map_title": "Venmo SF Office"
+   "map_title": "Venmo SF Office",
+   "image": "venmo"
  }, {
    "latitude": 37.288460,
    "longitude": -121.768007,
@@ -33,6 +34,7 @@
    "blue": "54",
    "title_links": ["http://giftbook.io"],
    "text_for_title_links": ["giftbook"],
+   "image": "giftbook"
  }, {
    "latitude": 37.429984,
    "longitude": -122.173642,
@@ -43,7 +45,8 @@
    "green": "20",
    "blue": "20",
    "title_links": ["https://itunes.apple.com/us/app/url-shortener-for-googles/id622377001?mt=8"],
-   "text_for_title_links": ["URL Shortener for goo.gl"]
+   "text_for_title_links": ["URL Shortener for goo.gl"],
+   "image": "url-shortener"
  }, {
    "latitude": 37.476908,
    "longitude": -122.151705,
@@ -53,7 +56,8 @@
    "red": "162",
    "green": "50",
    "blue": "66",
-   "map_title": "Poshmark Office"
+   "map_title": "Poshmark Office",
+   "image": "poshmark"
  }, {
    "latitude": 35.194021,
    "longitude": -119.147026,
@@ -65,7 +69,8 @@
    "blue": "0",
    "title_links": ["https://itunes.apple.com/us/app/take-me-away/id809039099?mt=8"],
    "text_for_title_links": ["Take Me Away"],
-   "map_title": "Somewhere on I5"
+   "map_title": "Somewhere on I5",
+   "image": "take-me-away"
  }, {
    "latitude": 42.265809,
    "longitude": -83.748760,
@@ -94,7 +99,8 @@
    "name": "UC Berkeley",
    "red": "253",
    "green": "181",
-   "blue": "20"
+   "blue": "20",
+   "image": "cal"
  }, {
    "latitude": 34.985991,
    "longitude": 135.751895,
@@ -103,7 +109,8 @@
    "name": "Kyoto, Japan",
    "red": "97",
    "green": "1",
-   "blue": "82"
+   "blue": "82",
+   "image": "japan"
  }, {
    "latitude": 46.806816,
    "longitude": 7.149632,
@@ -112,7 +119,8 @@
    "name": "Fribourg, Switzerland",
    "red": "101",
    "green": "137",
-   "blue": "235"
+   "blue": "235",
+   "image": "switzerland"
  }, {
    "latitude": 37.771203,
    "longitude": -122.404939,
@@ -155,7 +163,8 @@
    "blue": "60",
    "body_links": ["https://twitter.com/evanspiegel/status/427180962414219264"],
    "text_for_body_links": ["came to the hackathon"],
-   "map_title": "HackTech"
+   "map_title": "HackTech",
+   "image": "snapchat"
  }, {
    "latitude": 42.358376,
    "longitude": -71.096324,
@@ -176,5 +185,6 @@
    "text_for_title_links": ["New Delhi, India"],
    "red": "255",
    "green": "153",
-   "blue": "52"
+   "blue": "52",
+   "image": "india"
  }]

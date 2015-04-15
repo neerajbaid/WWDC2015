@@ -29,7 +29,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nrv-Pz-OSq">
-                    <rect key="frame" x="50" y="461" width="180" height="36"/>
+                    <rect key="frame" x="50" y="453" width="180" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="15"/>
                     <state key="normal" title="COOL!">

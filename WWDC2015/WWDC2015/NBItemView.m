@@ -60,6 +60,10 @@
 
 #pragma mark - Actions
 
+- (IBAction)closeTouchDown:(id)sender {
+    [self close:sender];
+}
+
 - (IBAction)close:(id)sender {
     if (self.closeBlock) {
         self.closeBlock();

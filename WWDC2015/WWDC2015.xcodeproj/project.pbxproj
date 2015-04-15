@@ -178,9 +178,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		073283B81ADD7B3000EE8AEF /* WWDC2015 */ = {
+		073283B81ADD7B3000EE8AEF /* Neeraj Baid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 073283DC1ADD7B3100EE8AEF /* Build configuration list for PBXNativeTarget "WWDC2015" */;
+			buildConfigurationList = 073283DC1ADD7B3100EE8AEF /* Build configuration list for PBXNativeTarget "Neeraj Baid" */;
 			buildPhases = (
 				073283B51ADD7B3000EE8AEF /* Sources */,
 				073283B61ADD7B3000EE8AEF /* Frameworks */,
@@ -190,7 +190,7 @@
 			);
 			dependencies = (
 			);
-			name = WWDC2015;
+			name = "Neeraj Baid";
 			productName = WWDC2015;
 			productReference = 073283B91ADD7B3000EE8AEF /* WWDC2015.app */;
 			productType = "com.apple.product-type.application";
@@ -244,7 +244,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				073283B81ADD7B3000EE8AEF /* WWDC2015 */,
+				073283B81ADD7B3000EE8AEF /* Neeraj Baid */,
 				073283D11ADD7B3100EE8AEF /* WWDC2015Tests */,
 			);
 		};
@@ -302,7 +302,7 @@
 /* Begin PBXTargetDependency section */
 		073283D41ADD7B3100EE8AEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 073283B81ADD7B3000EE8AEF /* WWDC2015 */;
+			target = 073283B81ADD7B3000EE8AEF /* Neeraj Baid */;
 			targetProxy = 073283D31ADD7B3100EE8AEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -475,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		073283DC1ADD7B3100EE8AEF /* Build configuration list for PBXNativeTarget "WWDC2015" */ = {
+		073283DC1ADD7B3100EE8AEF /* Build configuration list for PBXNativeTarget "Neeraj Baid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				073283DD1ADD7B3100EE8AEF /* Debug */,

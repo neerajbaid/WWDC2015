@@ -88,9 +88,10 @@
 
 - (void)ballView:(NBBallView *)ballView wasSelectedWithItemObject:(NBItemObject *)itemObject {
     NBItemView *itemView = [[NBItemView alloc] initWithFrame:self.view.frame itemObject:itemObject];
+    __weak NBItemView *weakItemView = itemView;
     NSArray *behaviors = self.animator.behaviors;
     itemView.closeBlock = ^{
-        [UIView mdDeflateTransitionFromView:itemView
+        [UIView mdDeflateTransitionFromView:weakItemView
                                      toView:self.view
                               originalPoint:ballView.center
                                    duration:0.4

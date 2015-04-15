@@ -24,6 +24,7 @@
         self.layer.cornerRadius = 8;
         self.frame = frame;
         self.backgroundColor = item.color;
+        self.mapView.userInteractionEnabled = NO;
         UIColor *textColor = [UIColor blackOrWhiteFromColor:item.color];
         self.titleLabel.text = item.name;
         self.descriptionLabel.text = item.itemDescription;

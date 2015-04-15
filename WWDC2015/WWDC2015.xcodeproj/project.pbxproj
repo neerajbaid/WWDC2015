@@ -46,7 +46,7 @@
 		0706E5F61ADDD5CF00E66770 /* NBMapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMapViewAnnotation.h; sourceTree = "<group>"; };
 		0706E5F81ADDD81D00E66770 /* UIColor+WWDC2015.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WWDC2015.h"; sourceTree = "<group>"; };
 		0706E5F91ADDD81D00E66770 /* UIColor+WWDC2015.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WWDC2015.m"; sourceTree = "<group>"; };
-		073283B91ADD7B3000EE8AEF /* WWDC2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		073283B91ADD7B3000EE8AEF /* Neeraj Baid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neeraj Baid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		073283BD1ADD7B3000EE8AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		073283BE1ADD7B3000EE8AEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		073283C01ADD7B3000EE8AEF /* NBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBAppDelegate.h; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		073283BA1ADD7B3000EE8AEF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				073283B91ADD7B3000EE8AEF /* WWDC2015.app */,
+				073283B91ADD7B3000EE8AEF /* Neeraj Baid.app */,
 				073283D21ADD7B3100EE8AEF /* WWDC2015Tests.xctest */,
 			);
 			name = Products;
@@ -192,7 +192,7 @@
 			);
 			name = "Neeraj Baid";
 			productName = WWDC2015;
-			productReference = 073283B91ADD7B3000EE8AEF /* WWDC2015.app */;
+			productReference = 073283B91ADD7B3000EE8AEF /* Neeraj Baid.app */;
 			productType = "com.apple.product-type.application";
 		};
 		073283D11ADD7B3100EE8AEF /* WWDC2015Tests */ = {

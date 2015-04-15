@@ -33,6 +33,7 @@
 }
 
 - (void)setupViews {
+    self.view.layer.cornerRadius = 8;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"info" ofType:@"json"];
     NSArray *rawData = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath]
                                                        options:NSJSONReadingAllowFragments

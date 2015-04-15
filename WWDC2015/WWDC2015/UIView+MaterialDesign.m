@@ -49,6 +49,7 @@ const CGFloat UIViewMaterialDesignTransitionDurationCoeff			= 0.65;
 	if (fromView.superview) {
 		// insert destination view
 		UIView *containerView = fromView.superview;
+        containerView.layer.cornerRadius = 8;
 		[containerView insertSubview:toView belowSubview:fromView];
 		toView.frame = fromView.frame;
 		

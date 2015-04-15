@@ -21,6 +21,7 @@
     self = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class])
                                           owner:self options:nil] firstObject];
     if (self) {
+        self.layer.cornerRadius = 8;
         self.frame = frame;
         self.backgroundColor = item.color;
         UIColor *textColor = [UIColor blackOrWhiteFromColor:item.color];

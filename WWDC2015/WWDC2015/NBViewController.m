@@ -1,7 +1,7 @@
 #import <CoreMotion/CoreMotion.h>
 
 #import "NBBallView.h"
-#import "NBItemObject.h"
+#import "Neeraj_Baid-Swift.h"
 #import "NBItemView.h"
 #import "NBViewController.h"
 #import "UIView+MaterialDesign.h"
@@ -48,7 +48,7 @@
                                   NBBallViewWidth, NBBallViewWidth);
         CGFloat shift = (y % 2) > 0 ? 0 : (NBBallViewWidth + NBBallViewSpacing)/2.0;
         frame.origin.x += shift;
-        NBItemObject *item = [[NBItemObject alloc] initWithJSON:datum];
+        NBItemObject *item = [[NBItemObject alloc] initWithJson:datum];
         NBBallView *ballView = [[NBBallView alloc] initWithFrame:frame item:item];
         ballView.delegate = self;
         ballView.alpha = 0;

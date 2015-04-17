@@ -6,7 +6,7 @@
 #import "NBViewController.h"
 #import "UIView+MaterialDesign.h"
 
-#define NBBallViewSpacing 16
+#define NBBallViewSpacing 0
 
 @interface NBViewController () <NBBallViewDelegate>
 

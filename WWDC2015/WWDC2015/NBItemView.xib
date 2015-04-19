@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6724" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -29,7 +29,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nrv-Pz-OSq">
-                    <rect key="frame" x="50" y="455" width="180" height="36"/>
+                    <rect key="frame" x="92" y="455" width="98" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="15"/>
                     <state key="normal" title="COOL!">
@@ -39,22 +39,23 @@
                         <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="gTS-r8-x8m"/>
                     </connections>
                 </button>
-                <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CtF-mS-ZTj">
-                    <rect key="frame" x="122" y="8" width="37" height="12"/>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" id="3Ms-NI-srj" userLabel="Close">
+                    <rect key="frame" x="105" y="0.0" width="73" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="close">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="closeTouchDown:" destination="iN0-l3-epB" eventType="touchDown" id="j4M-vB-3TB"/>
-                    </connections>
-                </button>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close" id="4hW-so-PKW">
+                            <rect key="frame" x="18" y="9" width="37" height="12"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.1647058824" green="0.84313725490000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="closeButton" destination="nrv-Pz-OSq" id="lle-3m-BRp"/>
+                <outlet property="closeView" destination="3Ms-NI-srj" id="pFw-jm-rW7"/>
+                <outlet property="coolButton" destination="nrv-Pz-OSq" id="Sg7-QO-PXi"/>
                 <outlet property="descriptionLabel" destination="SSg-Ls-N29" id="CAy-r4-zWH"/>
                 <outlet property="mapView" destination="84o-MH-xVx" id="moq-km-nDd"/>
                 <outlet property="titleLabel" destination="ETM-yj-rKI" id="2fq-lU-ZT3"/>

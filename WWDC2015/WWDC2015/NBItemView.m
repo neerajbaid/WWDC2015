@@ -11,7 +11,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
-@property (weak, nonatomic) IBOutlet UIButton *closeButton;
+@property (weak, nonatomic) IBOutlet UIButton *coolButton;
+@property (weak, nonatomic) IBOutlet UIView *closeView;
 
 @end
 
@@ -41,9 +42,9 @@
         CGRect newMapFrame = self.mapView.frame;
         newMapFrame.origin.y = newFrame.origin.y + newFrame.size.height + 8;
         self.mapView.frame = newMapFrame;
-        CGRect newCloseFrame = self.closeButton.frame;
-        newCloseFrame.origin.y = newMapFrame.origin.y + newMapFrame.size.height + 8;
-        self.closeButton.frame = newCloseFrame;
+        CGRect newCoolFrame = self.coolButton.frame;
+        newCoolFrame.origin.y = newMapFrame.origin.y + newMapFrame.size.height + 8;
+        self.coolButton.frame = newCoolFrame;
         MKCoordinateSpan span;
         span.latitudeDelta = 0.05;
         MKCoordinateRegion region = MKCoordinateRegionMake(item.coordinate, span);
@@ -53,15 +54,21 @@
         [self.mapView addAnnotation:annotation];
         [self.mapView selectAnnotation:annotation animated:YES];
         self.mapView.layer.cornerRadius = 5;
-        [self.closeButton setTitleColor:textColor forState:UIControlStateNormal];
+        [self.coolButton setTitleColor:textColor forState:UIControlStateNormal];
+        UILongPressGestureRecognizer *longPressGR = [[UILongPressGestureRecognizer alloc] initWithTarget:self
+                                                                                                  action:@selector(longPressClose:)];
+        longPressGR.minimumPressDuration = 0.001;
+        [self.closeView addGestureRecognizer:longPressGR];
     }
     return self;
 }
 
 #pragma mark - Actions
 
-- (IBAction)closeTouchDown:(id)sender {
-    [self close:sender];
+- (void)longPressClose:(UILongPressGestureRecognizer *)longPressGR {
+    if (longPressGR.state == UIGestureRecognizerStateBegan) {
+        [self close:nil];
+    }
 }
 
 - (IBAction)close:(id)sender {

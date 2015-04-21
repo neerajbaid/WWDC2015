@@ -14,6 +14,7 @@
 @property (nonatomic, strong) UIGravityBehavior *gravity;
 @property (nonatomic, strong) CMMotionManager *motionManager;
 @property (nonatomic, strong) NSArray *views;
+@property (weak, nonatomic) IBOutlet UIImageView *rotateImageView;
 
 @end
 
@@ -29,6 +30,13 @@
 - (void)viewDidAppear:(BOOL)animated {
     if (self.views.count == 0) {
         [self setupViews];
+        [UIView animateWithDuration:0.2
+                              delay:6
+                            options:UIViewAnimationOptionCurveEaseInOut
+                         animations:^{
+                             self.rotateImageView.alpha = 0;
+                         }
+                         completion:nil];
     }
 }
 

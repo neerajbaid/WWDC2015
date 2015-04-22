@@ -18,21 +18,10 @@
 		073283C51ADD7B3000EE8AEF /* NBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283C41ADD7B3000EE8AEF /* NBViewController.m */; };
 		073283C81ADD7B3000EE8AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073283C61ADD7B3000EE8AEF /* Main.storyboard */; };
 		073283CA1ADD7B3000EE8AEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073283C91ADD7B3000EE8AEF /* Images.xcassets */; };
-		073283D91ADD7B3100EE8AEF /* WWDC2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283D81ADD7B3100EE8AEF /* WWDC2015Tests.m */; };
 		073283E41ADD7C0000EE8AEF /* NBBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283E31ADD7C0000EE8AEF /* NBBallView.m */; };
 		073283E91ADD815400EE8AEF /* info.json in Resources */ = {isa = PBXBuildFile; fileRef = 073283E81ADD815400EE8AEF /* info.json */; };
 		07D68FBB1ADF392D0042ADB7 /* NBItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D68FBA1ADF392D0042ADB7 /* NBItemObject.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		073283D31ADD7B3100EE8AEF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 073283B11ADD7B3000EE8AEF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 073283B81ADD7B3000EE8AEF;
-			remoteInfo = WWDC2015;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0706E5E91ADDCBB400E66770 /* NBItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBItemView.h; sourceTree = "<group>"; };
@@ -54,7 +43,6 @@
 		073283C41ADD7B3000EE8AEF /* NBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBViewController.m; sourceTree = "<group>"; };
 		073283C71ADD7B3000EE8AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		073283C91ADD7B3000EE8AEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		073283D21ADD7B3100EE8AEF /* WWDC2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDC2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		073283D71ADD7B3100EE8AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		073283D81ADD7B3100EE8AEF /* WWDC2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDC2015Tests.m; sourceTree = "<group>"; };
 		073283E21ADD7C0000EE8AEF /* NBBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBBallView.h; sourceTree = "<group>"; };
@@ -70,13 +58,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0706E5F31ADDD04000E66770 /* MapKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		073283CF1ADD7B3100EE8AEF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				073283B91ADD7B3000EE8AEF /* Neeraj Baid.app */,
-				073283D21ADD7B3100EE8AEF /* WWDC2015Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,24 +172,6 @@
 			productReference = 073283B91ADD7B3000EE8AEF /* Neeraj Baid.app */;
 			productType = "com.apple.product-type.application";
 		};
-		073283D11ADD7B3100EE8AEF /* WWDC2015Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 073283DF1ADD7B3100EE8AEF /* Build configuration list for PBXNativeTarget "WWDC2015Tests" */;
-			buildPhases = (
-				073283CE1ADD7B3100EE8AEF /* Sources */,
-				073283CF1ADD7B3100EE8AEF /* Frameworks */,
-				073283D01ADD7B3100EE8AEF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				073283D41ADD7B3100EE8AEF /* PBXTargetDependency */,
-			);
-			name = WWDC2015Tests;
-			productName = WWDC2015Tests;
-			productReference = 073283D21ADD7B3100EE8AEF /* WWDC2015Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -221,10 +183,6 @@
 				TargetAttributes = {
 					073283B81ADD7B3000EE8AEF = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					073283D11ADD7B3100EE8AEF = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = 073283B81ADD7B3000EE8AEF;
 					};
 				};
 			};
@@ -242,7 +200,6 @@
 			projectRoot = "";
 			targets = (
 				073283B81ADD7B3000EE8AEF /* Neeraj Baid */,
-				073283D11ADD7B3100EE8AEF /* WWDC2015Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,13 +213,6 @@
 				073283E91ADD815400EE8AEF /* info.json in Resources */,
 				0706E5ED1ADDCBBE00E66770 /* NBItemView.xib in Resources */,
 				073283CA1ADD7B3000EE8AEF /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		073283D01ADD7B3100EE8AEF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,23 +235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		073283CE1ADD7B3100EE8AEF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				073283D91ADD7B3100EE8AEF /* WWDC2015Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		073283D41ADD7B3100EE8AEF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 073283B81ADD7B3000EE8AEF /* Neeraj Baid */;
-			targetProxy = 073283D31ADD7B3100EE8AEF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		073283C61ADD7B3000EE8AEF /* Main.storyboard */ = {
@@ -422,40 +356,6 @@
 			};
 			name = Release;
 		};
-		073283E01ADD7B3100EE8AEF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WWDC2015Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WWDC2015.app/WWDC2015";
-			};
-			name = Debug;
-		};
-		073283E11ADD7B3100EE8AEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WWDC2015Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WWDC2015.app/WWDC2015";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -473,15 +373,6 @@
 			buildConfigurations = (
 				073283DD1ADD7B3100EE8AEF /* Debug */,
 				073283DE1ADD7B3100EE8AEF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		073283DF1ADD7B3100EE8AEF /* Build configuration list for PBXNativeTarget "WWDC2015Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				073283E01ADD7B3100EE8AEF /* Debug */,
-				073283E11ADD7B3100EE8AEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

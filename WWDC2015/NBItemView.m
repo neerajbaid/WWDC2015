@@ -3,7 +3,6 @@
 
 #import "Neeraj_Baid-Swift.h"
 #import "NBItemView.h"
-#import "NBMapViewAnnotation.h"
 #import "UIColor+WWDC2015.h"
 
 @interface NBItemView ()

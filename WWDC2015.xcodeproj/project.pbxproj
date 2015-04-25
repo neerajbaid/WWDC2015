@@ -11,8 +11,8 @@
 		0706E5ED1ADDCBBE00E66770 /* NBItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0706E5EC1ADDCBBE00E66770 /* NBItemView.xib */; };
 		0706E5F01ADDCE7700E66770 /* UIView+MaterialDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 0706E5EF1ADDCE7700E66770 /* UIView+MaterialDesign.m */; };
 		0706E5F31ADDD04000E66770 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0706E5F21ADDD04000E66770 /* MapKit.framework */; };
-		0706E5F71ADDD5CF00E66770 /* NBMapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0706E5F51ADDD5CF00E66770 /* NBMapViewAnnotation.m */; };
 		0706E5FA1ADDD81D00E66770 /* UIColor+WWDC2015.m in Sources */ = {isa = PBXBuildFile; fileRef = 0706E5F91ADDD81D00E66770 /* UIColor+WWDC2015.m */; };
+		072B5B451AEB1893008274FA /* NBMapViewAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B5B441AEB1893008274FA /* NBMapViewAnnotation.swift */; };
 		073283BF1ADD7B3000EE8AEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283BE1ADD7B3000EE8AEF /* main.m */; };
 		073283C21ADD7B3000EE8AEF /* NBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283C11ADD7B3000EE8AEF /* NBAppDelegate.m */; };
 		073283C51ADD7B3000EE8AEF /* NBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283C41ADD7B3000EE8AEF /* NBViewController.m */; };
@@ -30,10 +30,9 @@
 		0706E5EE1ADDCE7700E66770 /* UIView+MaterialDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MaterialDesign.h"; sourceTree = "<group>"; };
 		0706E5EF1ADDCE7700E66770 /* UIView+MaterialDesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MaterialDesign.m"; sourceTree = "<group>"; };
 		0706E5F21ADDD04000E66770 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		0706E5F51ADDD5CF00E66770 /* NBMapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMapViewAnnotation.m; sourceTree = "<group>"; };
-		0706E5F61ADDD5CF00E66770 /* NBMapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMapViewAnnotation.h; sourceTree = "<group>"; };
 		0706E5F81ADDD81D00E66770 /* UIColor+WWDC2015.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WWDC2015.h"; sourceTree = "<group>"; };
 		0706E5F91ADDD81D00E66770 /* UIColor+WWDC2015.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WWDC2015.m"; sourceTree = "<group>"; };
+		072B5B441AEB1893008274FA /* NBMapViewAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBMapViewAnnotation.swift; sourceTree = "<group>"; };
 		073283B91ADD7B3000EE8AEF /* Neeraj Baid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neeraj Baid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		073283BD1ADD7B3000EE8AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		073283BE1ADD7B3000EE8AEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,8 +110,7 @@
 				0706E5E91ADDCBB400E66770 /* NBItemView.h */,
 				0706E5EA1ADDCBB400E66770 /* NBItemView.m */,
 				0706E5EC1ADDCBBE00E66770 /* NBItemView.xib */,
-				0706E5F61ADDD5CF00E66770 /* NBMapViewAnnotation.h */,
-				0706E5F51ADDD5CF00E66770 /* NBMapViewAnnotation.m */,
+				072B5B441AEB1893008274FA /* NBMapViewAnnotation.swift */,
 				073283E21ADD7C0000EE8AEF /* NBBallView.h */,
 				073283E31ADD7C0000EE8AEF /* NBBallView.m */,
 				073283C61ADD7B3000EE8AEF /* Main.storyboard */,
@@ -227,7 +225,7 @@
 				073283C51ADD7B3000EE8AEF /* NBViewController.m in Sources */,
 				07D68FBB1ADF392D0042ADB7 /* NBItemObject.swift in Sources */,
 				073283E41ADD7C0000EE8AEF /* NBBallView.m in Sources */,
-				0706E5F71ADDD5CF00E66770 /* NBMapViewAnnotation.m in Sources */,
+				072B5B451AEB1893008274FA /* NBMapViewAnnotation.swift in Sources */,
 				073283C21ADD7B3000EE8AEF /* NBAppDelegate.m in Sources */,
 				0706E5F01ADDCE7700E66770 /* UIView+MaterialDesign.m in Sources */,
 				073283BF1ADD7B3000EE8AEF /* main.m in Sources */,

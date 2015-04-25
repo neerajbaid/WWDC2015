@@ -2,6 +2,5 @@
 
 @interface NBViewController : UIViewController
 
-
 @end
 

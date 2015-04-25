@@ -1,11 +1,11 @@
 #import <CoreMotion/CoreMotion.h>
 
-#import "NBBallView.h"
 #import "Neeraj_Baid-Swift.h"
 #import "NBItemView.h"
 #import "NBViewController.h"
 #import "UIView+MaterialDesign.h"
 
+#define NBBallViewWidth 80
 #define NBBallViewSpacing 0
 
 @interface NBViewController () <NBBallViewDelegate>
@@ -57,8 +57,7 @@
         CGFloat shift = (y % 2) > 0 ? 0 : (NBBallViewWidth + NBBallViewSpacing)/2.0;
         frame.origin.x += shift;
         NBItemObject *item = [[NBItemObject alloc] initWithJson:datum];
-        NBBallView *ballView = [[NBBallView alloc] initWithFrame:frame item:item];
-        ballView.delegate = self;
+        NBBallView *ballView = [[NBBallView alloc] initWithFrame:frame item:item delegate:self];
         ballView.alpha = 0;
         [self.view addSubview:ballView];
         self.views = [self.views arrayByAddingObject:ballView];
@@ -94,7 +93,7 @@
 
 #pragma mark - NBBallViewDelegate
 
-- (void)ballView:(NBBallView *)ballView wasSelectedWithItemObject:(NBItemObject *)itemObject {
+- (void)ballViewWasSelected:(NBBallView * __nonnull)ballView itemObject:(NBItemObject * __nonnull)itemObject {
     NBItemView *itemView = [[NBItemView alloc] initWithFrame:self.view.frame itemObject:itemObject];
     __weak NBItemView *weakItemView = itemView;
     NSArray *behaviors = self.animator.behaviors;

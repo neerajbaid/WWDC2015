@@ -13,12 +13,12 @@
 		0706E5F31ADDD04000E66770 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0706E5F21ADDD04000E66770 /* MapKit.framework */; };
 		0706E5FA1ADDD81D00E66770 /* UIColor+WWDC2015.m in Sources */ = {isa = PBXBuildFile; fileRef = 0706E5F91ADDD81D00E66770 /* UIColor+WWDC2015.m */; };
 		072B5B451AEB1893008274FA /* NBMapViewAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B5B441AEB1893008274FA /* NBMapViewAnnotation.swift */; };
+		072B5B471AEB1B6D008274FA /* NBBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B5B461AEB1B6D008274FA /* NBBallView.swift */; };
 		073283BF1ADD7B3000EE8AEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283BE1ADD7B3000EE8AEF /* main.m */; };
 		073283C21ADD7B3000EE8AEF /* NBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283C11ADD7B3000EE8AEF /* NBAppDelegate.m */; };
 		073283C51ADD7B3000EE8AEF /* NBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283C41ADD7B3000EE8AEF /* NBViewController.m */; };
 		073283C81ADD7B3000EE8AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073283C61ADD7B3000EE8AEF /* Main.storyboard */; };
 		073283CA1ADD7B3000EE8AEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073283C91ADD7B3000EE8AEF /* Images.xcassets */; };
-		073283E41ADD7C0000EE8AEF /* NBBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 073283E31ADD7C0000EE8AEF /* NBBallView.m */; };
 		073283E91ADD815400EE8AEF /* info.json in Resources */ = {isa = PBXBuildFile; fileRef = 073283E81ADD815400EE8AEF /* info.json */; };
 		07D68FBB1ADF392D0042ADB7 /* NBItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D68FBA1ADF392D0042ADB7 /* NBItemObject.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +33,7 @@
 		0706E5F81ADDD81D00E66770 /* UIColor+WWDC2015.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WWDC2015.h"; sourceTree = "<group>"; };
 		0706E5F91ADDD81D00E66770 /* UIColor+WWDC2015.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WWDC2015.m"; sourceTree = "<group>"; };
 		072B5B441AEB1893008274FA /* NBMapViewAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBMapViewAnnotation.swift; sourceTree = "<group>"; };
+		072B5B461AEB1B6D008274FA /* NBBallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBBallView.swift; sourceTree = "<group>"; };
 		073283B91ADD7B3000EE8AEF /* Neeraj Baid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neeraj Baid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		073283BD1ADD7B3000EE8AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		073283BE1ADD7B3000EE8AEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,8 +45,6 @@
 		073283C91ADD7B3000EE8AEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		073283D71ADD7B3100EE8AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		073283D81ADD7B3100EE8AEF /* WWDC2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDC2015Tests.m; sourceTree = "<group>"; };
-		073283E21ADD7C0000EE8AEF /* NBBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBBallView.h; sourceTree = "<group>"; };
-		073283E31ADD7C0000EE8AEF /* NBBallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBBallView.m; sourceTree = "<group>"; };
 		073283E81ADD815400EE8AEF /* info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = info.json; sourceTree = "<group>"; };
 		07D68FB91ADF392C0042ADB7 /* Neeraj Baid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Neeraj Baid-Bridging-Header.h"; sourceTree = "<group>"; };
 		07D68FBA1ADF392D0042ADB7 /* NBItemObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBItemObject.swift; sourceTree = "<group>"; };
@@ -111,8 +110,7 @@
 				0706E5EA1ADDCBB400E66770 /* NBItemView.m */,
 				0706E5EC1ADDCBBE00E66770 /* NBItemView.xib */,
 				072B5B441AEB1893008274FA /* NBMapViewAnnotation.swift */,
-				073283E21ADD7C0000EE8AEF /* NBBallView.h */,
-				073283E31ADD7C0000EE8AEF /* NBBallView.m */,
+				072B5B461AEB1B6D008274FA /* NBBallView.swift */,
 				073283C61ADD7B3000EE8AEF /* Main.storyboard */,
 				073283C91ADD7B3000EE8AEF /* Images.xcassets */,
 				0706E5F11ADDCE7B00E66770 /* Categories */,
@@ -224,8 +222,8 @@
 				0706E5EB1ADDCBB400E66770 /* NBItemView.m in Sources */,
 				073283C51ADD7B3000EE8AEF /* NBViewController.m in Sources */,
 				07D68FBB1ADF392D0042ADB7 /* NBItemObject.swift in Sources */,
-				073283E41ADD7C0000EE8AEF /* NBBallView.m in Sources */,
 				072B5B451AEB1893008274FA /* NBMapViewAnnotation.swift in Sources */,
+				072B5B471AEB1B6D008274FA /* NBBallView.swift in Sources */,
 				073283C21ADD7B3000EE8AEF /* NBAppDelegate.m in Sources */,
 				0706E5F01ADDCE7700E66770 /* UIView+MaterialDesign.m in Sources */,
 				073283BF1ADD7B3000EE8AEF /* main.m in Sources */,
